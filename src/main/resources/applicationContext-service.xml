@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="cn.bdqn"/>
+
+<!--    设值注入对象的引用-->
+<!--    <bean id="userDao" class="cn.bdqn.dao.UserDaoImpl"></bean>-->
+<!--    注入service-->
+<!--    <bean id="userService" class="cn.bdqn.service.UserServiceImpl">-->
+<!--        <property name="userDao" ref="userDao"></property>-->
+<!--    </bean>-->
+
+<!--    自动装配-->
+<!--    <bean id="userDao1" class="cn.bdqn.dao.UserDaoImpl" ></bean>-->
+    <!--    注入service-->
+<!--    <bean id="userService1" class="cn.bdqn.service.UserServiceImpl" autowire="byType"></bean>-->
+
+    <!--    自动装配-->
+<!--    <bean id="userDao1" class="cn.bdqn.dao.UserDaoImpl" ></bean>-->
+    <!--    注入service-->
+<!--    <bean id="userService1" class="cn.bdqn.service.UserServiceImpl" autowire="byName"></bean>-->
+
+</beans>

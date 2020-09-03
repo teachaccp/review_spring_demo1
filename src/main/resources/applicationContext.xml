@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    设置注入给实体类赋值-->
+    <bean id="user" class="cn.bdqn.pojo.User">
+        <property name="userName" value="张三"/>
+        <property name="password" value="250250"/>
+    </bean>
+
+<!--    构造方法赋值-->
+    <bean id="user2" class="cn.bdqn.pojo.User">
+        <constructor-arg value="张三丰" type="java.lang.String" index="0" name="userName"></constructor-arg>
+        <constructor-arg value="222222" type="java.lang.String" index="1" name="password"></constructor-arg>
+    </bean>
+<!--    p命名空间注入-->
+    <bean id="user3" class="cn.bdqn.pojo.User" p:userName="李四" p:password="123"></bean>
+
+</beans>
